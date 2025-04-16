@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>James Smith | Personal Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      background: #f8f9fa;
+      color: #333;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    header {
+      background: #1f1f1f;
+      color: #fff;
+      padding: 20px 0;
+    }
+
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    nav a {
+      font-weight: 600;
+      color: #fff;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #4fc3f7;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #007acc, #00c6ff);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+      animation: fadeIn 1s ease-in;
+    }
+
+    .hero h2 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    section {
+      padding: 60px 20px;
+      animation: fadeIn 1s ease-in;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #007acc;
+    }
+
+    .project-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    .project-list li {
+      list-style: none;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .project-list li:hover {
+      transform: translateY(-5px);
+    }
+
+    .contact-info p {
+      margin-bottom: 10px;
+    }
+
+    .contact-info a {
+      color: #007acc;
+    }
+
+    footer {
+      background: #1f1f1f;
+      color: #ccc;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      background: #007acc;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #005f99;
+    }
+
+    @media (max-width: 600px) {
+      header .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>James Smith</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="experience.html">Experience</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Hi, I'm James.</h2>
+      <p>Accounting Student | Data Enthusiast | Aspiring Quant</p>
+      <a class="btn" href="#contact">Get In Touch</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I'm a college athlete studying Accounting and Data Science. I enjoy blending numbers, code, and creativity to solve real-world problems.</p>
+      <p>Outside the classroom, I compete as a varsity wide receiver and apply what I learn through internships and financial modeling projects. I'm also building my own trading algorithms and data tools that bridge accounting with market analytics.</p>
+      <a class="btn" href="resume.pdf" download>Download Resume</a>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <ul class="project-list">
+        <li>
+          📈 <strong>Options Screener Bot</strong><br />
+          Built in Python, this bot scans the S&P 500 for high-probability bullish and bearish options trades and sends alerts via Discord.
+        </li>
+        <li>
+          📊 <strong>Nike vs Under Armour Analysis</strong><br />
+          A financial deep dive comparing two athletic giants using DuPont framework, ratio analysis, and strategic forecasting.
+        </li>
+        <li>
+          📚 <strong>Tech History Essay Website</strong><br />
+          Converted an academic essay on computing history into a fully responsive website with HTML and CSS.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container contact-info">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:james.smith@email.com">james.smith@email.com</a></p>
+      <p>GitHub: <a href="https://github.com/jamessmith" target="_blank">github.com/jamessmith</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/jamessmith" target="_blank">linkedin.com/in/jamessmith</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 James Smith. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
