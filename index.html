@@ -43,6 +43,20 @@
       flex-wrap: wrap;
     }
 
+    .profile-pic {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid white;
+    }
+
+    .profile-wrap {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
     nav ul {
       display: flex;
       gap: 20px;
@@ -156,6 +170,11 @@
       .hero h2 {
         font-size: 2rem;
       }
+
+      .profile-wrap {
+        flex-direction: column;
+        justify-content: center;
+      }
     }
   </style>
 </head>
@@ -163,7 +182,10 @@
 
   <header>
     <div class="container">
-      <h1>James Smith</h1>
+      <div class="profile-wrap">
+        <img src="2022 Jamie Smith Head Shot.jpg" alt="James Smith" class="profile-pic" />
+        <h1>James Smith</h1>
+      </div>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -186,7 +208,7 @@
       <h2>About Me</h2>
       <p>I'm a college athlete studying Accounting and Data Science. I enjoy blending numbers, code, and creativity to solve real-world problems.</p>
       <p>Outside the classroom, I compete as a varsity wide receiver and apply what I learn through internships and financial modeling projects. I'm also building my own trading algorithms and data tools that bridge accounting with market analytics.</p>
-      <a class="btn" href="resume.pdf" download>Download Resume</a>
+      <a class="btn" href="JAMES L SMITH CV 2025.pdf" download>Download Resume</a>
     </div>
   </section>
 
@@ -227,3 +249,4 @@
 
 </body>
 </html>
+
